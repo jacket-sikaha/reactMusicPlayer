@@ -1,2 +1,2 @@
 # reactMusicPlayer
-##  使用之前npm i
+## 使用之前 npm i
