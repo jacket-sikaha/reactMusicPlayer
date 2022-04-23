@@ -1,0 +1,81 @@
+.PlayerLayout{
+    width: 100%;
+    background-color: white;
+    height: 120px;
+    margin: 10px auto;
+    border-radius: 25px;
+    display: flex;
+}
+
+.img{
+    width: 40%;
+    position: relative;
+}
+.img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    position: absolute;
+    top: -80px;
+}
+
+.MusicPlayer{
+
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.buttonList{
+    margin: 0 auto;
+}
+
+.buttonList svg{
+    margin: 5px 20px;
+}
+/*!* :first-child 兄弟元素里第一个元素*!*/
+/*.buttonList div:first-child{*/
+/*    flex:1*/
+/*}*/
+.buttonList svg:hover{
+    cursor: pointer;
+    color: #77cc00;
+}
+
+
+.timeLine{
+    width: 300px;
+    margin: 15px auto;
+    height: 3px;
+    background-color: grey;
+    display: flex;
+    /*align-items: center;*/
+    cursor: pointer;
+}
+.linePosition{
+    background-color: gold;
+    /*进度条设置  两种任意*/
+    /*flex-grow: 0.4;*/
+    /*width: 0;*/
+    position: relative;
+    /*调整点的位置 进度条后接着点*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.point{
+    position: absolute;
+    /*left: 0;*/
+    /*top:0;*/
+    /*bottom: -5px;*/
+    background-color: #73cdff;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    -webkit-user-select: none;
+}
+.point:hover{
+    width: 8px;
+    height: 8px;
+}

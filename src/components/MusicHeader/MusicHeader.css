@@ -1,0 +1,17 @@
+/*主页面边框大小和背景*/
+.MusicHeader{
+    width: inherit;
+    /*height: 11%;*/
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template-columns: 200px 550px 200px;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.middleHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 20px;
+    justify-items: center;
+}

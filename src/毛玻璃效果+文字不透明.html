@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>.demo2-bg{
+
+    /*background-color: #0004f6;*/
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    position: relative;
+
+  }
+  .demo2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    height: 300px;
+    line-height: 50px;
+    text-align: center;
+    background:rgba(255,255,255,0.7);
+
+  }
+  .demo2-bg::before{
+    background: url(http://csssecrets.io/images/tiger.jpg) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;/*-1 可以当背景*/
+    filter: blur(3px);
+  }
+
+  </style>
+</head>
+<body>
+
+<div class="demo2-bg">
+  <div class="demo2">背景图半透明，文字不透明
+    <div>ascazsdv</div><br />方法：定位+ background:rgba(255,255,255,0.3)</div>
+</div>
+
+<!--<audio src="https://music.163.com/song/media/outer/url?id=1482101374.mp3" onwaiting="t() " controls>yyy</audio>-->
+<!--<audio src="https://music.163.com/song/media/outer/url?id=535028071.mp3" onwaiting="t() " controls>sss</audio>-->
+<audio  preload='auto' src="https://music.163.com/song/media/outer/url?id=535028071.mp3"  controls>sss</audio>
+<button onclick="playmc()" >ssss</button>
+</body>
+<script>
+    let audio = document.querySelector('audio');
+    function playmc() {
+        console.dir(!audio.duration)
+        console.dir(!33.22)
+        console.dir(audio.paused)
+        audio.play()
+    }
+    function t() {
+        console.dir(audio)
+        audio.load()
+    }
+    let pro = new Promise(resolve =>
+        {
+            setTimeout(()=>{
+                resolve()
+                setTimeout(()=>{
+                    console.log('set2')
+                })
+                console.log('set1')
+            })
+            console.log('promise')
+        }
+    ).then(
+        value => console.log('success')
+    )
+    console.log('sikara')
+
+    new Promise((resolve, reject) => reject('aaa'))
+        .then(null,reason => {
+        console.log(reason)
+    }).then(value => {
+        console.log(value)
+    },reason => {
+        console.log(reason)
+    })
+
+</script>
+</html>

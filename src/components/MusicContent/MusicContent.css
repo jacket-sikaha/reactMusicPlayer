@@ -1,0 +1,45 @@
+/*主页面边框大小和背景*/
+.MusicContent{
+    width: 90%;
+    height: 100%;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1,h3{
+    position: relative;
+    left: calc(45%);
+}
+
+.McBottom{
+    width: inherit;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 50px;
+}
+
+.subscribeList{
+   display: grid;
+    grid-template-columns: 45px 45px 45px;
+    column-gap: 5px;
+}
+
+.subscribeList > *{
+
+    cursor: pointer;
+}
+
+.description{
+    /*min-width: 60%;*/
+    /*其实是给子级盒子限定了宽度，
+    而换行标签是根据盒子宽度超过页面宽度才会换行，解决方法就是给盒子设置最小宽度min-width,
+    这样盒子宽度会被文字撑开，从而换行*/
+    width: 320px;
+    text-align: right;
+    flex: 1;
+    word-wrap: break-word;
+}

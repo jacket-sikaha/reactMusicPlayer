@@ -1,0 +1,30 @@
+/*主页面边框大小和背景*/
+.mainBg{
+    background-color:rgba(255, 255, 255, 0.6);
+    border: white solid 2px;
+    width: 850px;
+    height: 500px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /*z-index: 1;*/
+    /*当有很多图层时就需要标上，确定图层间堆叠顺序*/
+
+    /*确定抽屉栏位置*/
+    position: relative;
+    overflow: hidden;
+}
+
+/* .mainBg::before{*/
+/*     background: url("360截图20220202130914898.jpg") no-repeat;*/
+/*     background-size: cover;*/
+/*     width: 720px;*/
+/*     height: 500px;*/
+/*     content:'';*/
+/*     position:absolute;*/
+/*     z-index: -1;*/
+/*     filter: blur(3px);*/
+/*}*/

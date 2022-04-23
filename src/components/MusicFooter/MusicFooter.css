@@ -1,0 +1,16 @@
+/*主页面边框大小和背景*/
+.MusicFooter{
+    width: inherit;
+    height: 11%;
+    margin: 0 auto 5px auto;
+    display: grid;
+    grid-template-columns: 100px  100px;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.pre ,.next {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
